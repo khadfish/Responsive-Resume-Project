@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  margin: 0;
+  font-family: 'Raleway';
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+
+a {
+  color: #1C9C94;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+article {
+  padding:0 1em;
+}
+
+section{
+  margin: 1em;
+  padding: .2em;
+}
+
+header, main, footer {
+  margin: 0 auto;
+}
+
+header {
+  padding: 2em;
+  text-align: center;
+  background-image: url('https://i.postimg.cc/15m984pq/IMG-1213.jpg');
+  background-size: cover;
+  background-position: fixed;
+  color: 	rebeccapurple;
+  font-weight: bold;
+}
+
+header section {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+header img {
+  border-radius: 0%;
+  max-width: 200px;
+  border-fade: 50%;
+  box-shadow: 1px 2px 3px rgba(.9,.9,.9,.9);
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 40px;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h3, h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.section {
+  background-image: url('https://i.postimg.cc/15m984pq/IMG-1213.jpg');
+}
+
+main {
+  max-width: 1140px;
+}
+
+main section:not(:last-child) {
+  border-bottom: 1px solid #4b0082;
+}
+
+.fab {
+  border: .5px solid white;
+  border-radius: 20%;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+
+a .fab {
+  color: white;
+}
+
+.job, .title {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.job .title {
+  color: #4b0082;
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 30%;
+}
+
+.job .description {
+  -ms-flex: 0 0 66.6%;
+  flex: 0 0 66.6%;
+  max-width: 66.6%;
+}
+
+.job .description p {
+  padding-left: 1em;
+}
+
+.CurrentProjects .column {
+  -ms-flex: 0 0 50%%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.CurrentProjects .column ul, ul.job-description {
+  list-style-type: none;
+}
+
+.CurrentProjects .column ul > li:before {
+  content: "►";
+  padding-right: 0.5em;
+  color: 	#4b0082;
+}
+
+.school, .job-title {
+  text-transform: capitalize;
+}
+
+.school span, .job-title span {
+  color: #4b0082;
+  text-decoration: underline;
+}
+
+ul.job-description li:before{
+  content: "✔";
+  padding-right: 0.5em;
+  color: #509e98;
+}
+
+footer {
+ padding: 1em 1.5em;
+ background: rebeccapurple;
+ color: white;
+ text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .course {
+    display: block;
+  }
+
+  .job .title, .job .description {
+    max-width: 100%;
+  }
+
+
+@media only screen and (max-width: 576px) {
+  .CurrentProjects {
+    display: block;
+  }
+
+
+  footer {
+    text-align: center;
+  }
+}
